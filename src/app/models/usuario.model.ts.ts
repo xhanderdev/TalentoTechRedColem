@@ -1,2 +1,1 @@
-export interface UsuarioModelTs {
-}
+export interface UsuarioModelTs {}

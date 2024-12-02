@@ -1,1 +1,37 @@
-<p>lista-pub works!</p>
+<p>Prueba listado Publicación</p>
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <h1>Listado de Publicaciones</h1>
+
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Id Publicación</th>
+            <th scope="col">Título</th>
+            <th scope="col">Contenido</th>
+            <th scope="col">Fecha de Creación</th>
+            <th scope="col">Usuario</th>
+            <th scope="col">Emprendimiento</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let pub of publicaciones">
+            <th scope="row">{{ pub.idPublicacion }}</th>
+            <td>{{ pub.titulo }}</td>
+            <td>{{ pub.contenido }}</td>
+            <td>{{ pub.fechaCreacion }}</td>
+            <td>{{ pub.usuario.nombre }}</td>
+            <td>{{ pub.emprendimiento.nombre }}</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- Crear publicación -->
+      <button class="btn btn-primary" routerLink="/crear-publicacion">
+        Crear Publicación
+      </button>
+    </div>
+  </div>
+</div>
