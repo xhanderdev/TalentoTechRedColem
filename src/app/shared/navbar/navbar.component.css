@@ -1,21 +1,37 @@
-
-/* Cambia el fondo del navbar */
+/* Estilo principal del navbar */
 .navbar {
-    background-color: #2C3E50; /* Color de fondo */
+    background-color: #363955; /* Color de fondo */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra */
     font-family: 'Montserrat', sans-serif; /* Fuente del texto */
-}
+  }
+  
+  /* Estilo para el logo del navbar */
+  .navbar-logo {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+  }
 
-/* Cambia el color del texto del navbar */
-.navbar a {
+  /* Cambia el color del texto del navbar */
+  .navbar a {
     color: #BDC3C7; /* Color del texto */
     text-decoration: none; /* Elimina el subrayado */
     padding: 10px 15px; /* Espaciado interno */
     display: inline-block; /* Asegura que los elementos se alineen correctamente */
-}
+  }
 
-/* Cambia el color del texto al pasar el mouse */
-.navbar a:hover {
+  /* Cambia el color del texto al pasar el mouse */
+  .navbar a:hover {
     color: #F5F6E6; /* Color del texto al hacer hover */
     background-color: #54668e; /* Fondo al pasar el mouse */
     border-radius: 5px; /* Bordes redondeados */
-}
+  }
+
+  /* Botón de toggler */
+  .navbar-toggler {
+    border-color: #F5F6E6;
+  }
+
+  .navbar-toggler-icon {
+    background-color: #F5F6E6;
+  }
