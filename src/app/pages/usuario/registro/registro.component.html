@@ -5,13 +5,73 @@
         <div class="col">
             <h1>Formulario Usuarios</h1>
 
-            <form>
-                
-                
+            <form (ngSubmit)="onSubmit()" #usuarioForm="ngForm">
+                <div>
+                    <label for="nombre">Nombre</label>
+                    <input type="text"
+                    id="nombre"
+                    class="form-control"
+                    required
+                    minlength="3"
+                    maxlength="20"
+                    name="nombre"
+                    [(ngModel)]="usuario.nombre"
+                    #nombre="ngModel"
+                    >
+                   <!--Validar Registro-->
+                    <div *ngIf="nombre.invalid && (nombre.dirty || nombre.touched)" class="text-danger">
+                        <small *ngIf="nombre.errors?.['required']">El nombre es obligatorio</small>
+                        <small *ngIf="nombre.errors?.['minlength']">El nombre debe tener mas de 3 caractere</small>
+                        <small *ngIf="nombre.errors?.['maxlength']">El nombre debe tener menos de 20 caracteres</small>
+                     </div>
+                 </div>
+
+                 <div>
+                    <label for="apellido">Apellido</label>
+                    <input type="text"
+                    id="apellido"
+                    class="form-control"
+                    required
+                    minlength="3"
+                    maxlength="20"
+                    name="apellido"
+                    [(ngModel)]="usuario.apellido"
+                    #apellido="ngModel"
+                    >
+                   <!--Validar Registro-->
+                    <div *ngIf="nombre.invalid && (nombre.dirty || nombre.touched)" class="text-danger">
+                        <small *ngIf="nombre.errors?.['required']">El nombre es obligatorio</small>
+                        <small *ngIf="nombre.errors?.['minlength']">El nombre debe tener mas de 3 caractere</small>
+                        <small *ngIf="nombre.errors?.['maxlength']">El nombre debe tener menos de 20 caracteres</small>
+                     </div>
+                 </div>
+
+
+                 <button class="btn btn-success" type="submit" >Resgistrar Usuario</button>
+
+
             </form>
 
 
-           
+
         </div>
     </div>
 </div>
+
+
+<!--  
+    idUsuario: 0,
+    nombre: '',
+    apellido: '',
+    correoElectronico: '',
+    telefono: '',
+    password: '',
+    direccion: '',
+    fotoPerfil: '',
+    biografia: '',
+    sitioWeb: '',
+    activo: true,
+    ciudad: '',
+
+
+-->
