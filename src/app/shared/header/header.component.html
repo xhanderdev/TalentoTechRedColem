@@ -1,1 +1,81 @@
-<p>header works!</p>
+<!-- para inicio de la pagina -->
+
+<nav class="navbar navbar-expand-lg" style="background-color: #363955; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);">
+    <div class="container-fluid">
+      <a class="navbar-brand d-flex align-items-center" href="#" style="color: #F5F6E6; font-weight: bold; font-size: 1.5rem;">
+        <img src="/logo.png" alt="logo-nav" title="logo-nav" style="width: 50px; height: auto; margin-right: 10px;">
+        <h2>RedColem</h2>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="border-color: #F5F6E6;">
+        <span class="navbar-toggler-icon" style="background-color: #F5F6E6;"></span>
+      </button>
+  
+  <!-- menu -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="http://localhost:4200/login" style="color: #E8E8E8; font-weight: 500;">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" style="color: #E8E8E8; font-weight: 500;">Acerca de</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" style="color: #E8E8E8; font-weight: 500;">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <!-- contenedor de Bienvenida -->
+  
+  <div class="container text-center py-5 my-4" style="background-color: #F5F6E6; border-radius: 15px; box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.15);">
+    <h1 class="display-4 fw-bold" style="color: #54668E;">Bienvenido a <span style="color: #363955;">RedColem</span></h1>
+    <p class="lead mt-3" style="color: #363955;">Tu red social para <strong style="color: #54668E;">conectar</strong> e <strong style="color: #54668E;">innovar</strong>.</p>
+    <button class="btn btn-lg" style="background-color: #54668E; color: #F5F6E6; border: none; border-radius: 50px; padding: 10px 30px; transition: all 0.3s ease;" onmouseover="this.style.backgroundColor='#363955';" onmouseout="this.style.backgroundColor='#54668E';">
+      <h4 ><a href="http://localhost:4200/register" style="color: #F5F6E6;">¡Únete ahora!</a></h4>
+    </button>
+  </div>
+  
+  <!-- contenedor de Contenido -->
+  
+  <div class="container text-center py-5 my-4" style="background-color: #F5F6E6; border-radius: 15px; box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.15);">
+    <h2 class="text-center" style="color: #54668E;">Descubre, conecta y comparte en RedColem</h2>
+    <div class="row mt-4">
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title" style="color: #363955;" >Emprendimientos</h5>
+            <hr class="my-4">
+            <p class="card-text"style="color: #54668E;">Explora proyectos y negocios innovadores.</p>
+            <a routerLink="/emprendimiento/list" class="btn btn-primary" style="background-color: #54668E; color: #F5F6E6; border: none; border-radius: 50px; padding: 10px 30px; transition: all 0.3s ease;" onmouseover="this.style.backgroundColor='#363955';" onmouseout="this.style.backgroundColor='#54668E';">Ver más</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title"style="color: #363955;">Publicaciones</h5>
+            <hr class="my-4">
+            <p class="card-text" style="color: #54668E;">Comparte ideas y encuentra inspiración.</p>
+            <a routerLink="/publicacion/list" class="btn btn-primary" style="background-color: #54668E; color: #F5F6E6; border: none; border-radius: 50px; padding: 10px 30px; transition: all 0.3s ease;" onmouseover="this.style.backgroundColor='#363955';" onmouseout="this.style.backgroundColor='#54668E';">Ver más</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title"style="color: #363955;">Actividades</h5>
+            <hr class="my-4">
+            <p class="card-text"style="color: #54668E;">Participa en eventos y actividades interesantes.</p>
+            <a routerLink="./pages/login/login.component"  class="btn btn-primary" style="background-color: #54668E; color: #F5F6E6; border: none; border-radius: 50px; padding: 10px 30px; transition: all 0.3s ease;" onmouseover="this.style.backgroundColor='#363955';" onmouseout="this.style.backgroundColor='#54668E';">Ver más</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <app-footer></app-footer>
+  
+  
+  
+  

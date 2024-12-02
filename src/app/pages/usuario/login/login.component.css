@@ -1,0 +1,83 @@
+/* General Styles */
+.login {
+    background-color: #E8E8E8;
+    color: #363955;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .navbar {
+    background-color: #54668E;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .navbar-brand {
+    font-weight: bold;
+    color: #F5F6E6 !important;
+  }
+  
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23F5F6E6' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(245, 246, 230, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  }
+  
+  /* Button Styles */
+  .btn-primary {
+    background-color: #54668E;
+    border: none;
+  }
+  
+  .btn-primary:hover {
+    background-color: #363955;
+  }
+  
+  /* Login Card */
+  .login-card {
+    max-width: 400px;
+    background-color: #F5F6E6;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    margin: 50px auto;
+  }
+  
+  /* Form Styles */
+  .form-label {
+    color: #54668E;
+  }
+  
+  .form-control {
+    border-radius: 10px;
+    border: 1px solid #54668E;
+  }
+  
+  .input-group {
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .input-group-text {
+    background-color: #FFFFFF;
+    border: 1px solid #E0E0E0;
+    border-right: none;
+  }
+  
+  .input-group .form-control {
+    border: 1px solid #E0E0E0;
+    border-left: none;
+    border-radius: 0 8px 8px 0;
+  }
+  
+  .form-check-label {
+    color: #54668E;
+  }
+  
+  /* Links */
+  .text-center a {
+    color: #54668E;
+    text-decoration: none;
+  }
+  
+  .text-center a:hover {
+    color: #363955;
+    font-weight: bold;
+  }
+  

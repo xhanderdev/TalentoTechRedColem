@@ -21,10 +21,11 @@ import { NavbarComponent } from './shared/navbar/navbar.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { SidebarComponent } from './shared/sidebar/sidebar.component';
 import { HeaderComponent } from './shared/header/header.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 //importado HttpClienteModule ->HttpCliente
 import { HttpClientModule } from '@angular/common/http';
 import { ListadoUsuarioComponent } from './pages/usuario/listado-usuario/listado-usuario.component';
+import { HomeComponent } from './pages/home/home.component';
 
 
 
@@ -50,14 +51,17 @@ import { ListadoUsuarioComponent } from './pages/usuario/listado-usuario/listado
     SidebarComponent,
     HeaderComponent,
     ListadoUsuarioComponent,
+    HomeComponent,
     
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    ReactiveFormsModule,
     HttpClientModule,
-    LoginComponent
+    LoginComponent,
 ],
   providers: [],
   bootstrap: [AppComponent]

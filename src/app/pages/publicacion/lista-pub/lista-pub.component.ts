@@ -1,14 +1,11 @@
 import { Component } from '@angular/core';
-import {
-  PublicacionService,
-  Publicacion,
-} from '../../../services/publicacion.service';
+import { PublicacionService,Publicacion} from '../../../services/publicacion.service';
 
 @Component({
-  selector: 'app-lista-pub.component',
+  selector: 'app-lista-pub',
   standalone: false,
   templateUrl: './lista-pub.component.html',
-  styleUrls: ['./lista-pub.component.component.css'],
+  styleUrls: ['./lista-pub.component.css'],
 })
 export class ListaPubComponent {
   publicaciones: Publicacion[] = [];

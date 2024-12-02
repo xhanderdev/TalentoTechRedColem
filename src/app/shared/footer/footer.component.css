@@ -1,0 +1,57 @@
+/* Estilo del footer */
+footer {
+    background-color: #2C3E50; /* Color de fondo del footer */
+    color: #BDC3C7; /* Color del texto */
+    font-family: 'Montserrat', sans-serif; /* Fuente del texto */
+    padding: 2rem 0; /* Espaciado vertical */
+    margin-top: 3rem; /* Separación superior */
+}
+
+footer h5 {
+    color: #F5F6E6; /* Color de los títulos */
+    margin-bottom: 1rem; /* Espaciado inferior */
+}
+
+footer p,
+footer ul,
+footer small {
+    color: #BDC3C7; /* Color del texto */
+}
+
+/* Estilo de los enlaces en el footer */
+footer a {
+    color: #BDC3C7; /* Color inicial de los enlaces */
+    text-decoration: none; /* Sin subrayado */
+    transition: color 0.3s, background-color 0.3s; /* Transición para hover */
+}
+
+/* Cambiar color al pasar el mouse sobre los enlaces */
+footer a:hover {
+    color: #F5F6E6; /* Color al hacer hover */
+    background-color: #54668E; /* Fondo al pasar el mouse */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 0.2rem 0.4rem; /* Espaciado interno para resaltar */
+}
+
+/* Estilo para los íconos sociales */
+footer .d-flex a {
+    font-size: 1.5rem; /* Tamaño de los íconos */
+    margin-right: 0.5rem; /* Espaciado entre íconos */
+    color: #BDC3C7; /* Color inicial de los íconos */
+}
+
+footer .d-flex a:hover {
+    color: #F5F6E6; /* Color de íconos al hacer hover */
+}
+
+/* Línea divisoria */
+footer hr {
+    border-top: 1px solid #BDC3C7; /* Color de la línea divisoria */
+    margin: 1.5rem 0; /* Espaciado vertical */
+}
+
+/* Texto centrado del footer */
+footer .text-center {
+    color: #BDC3C7; /* Color del texto centrado */
+    font-size: 0.9rem; /* Tamaño de letra pequeño */
+}

@@ -1,0 +1,58 @@
+/* Fondo general */
+body {
+  background-color: #f5f6e6;
+  color: #363955;
+}
+
+/* Estilo para tarjetas */
+.card {
+  background-color: #e8e8e8;
+  border: none;
+  border-radius: 12px;
+}
+
+/* Títulos */
+.card-title {
+  color: #54668e;
+  font-weight: bold;
+}
+
+/* Botones */
+.btn-outline-primary {
+  color: #54668e;
+  border-color: #54668e;
+}
+
+.btn-outline-primary:hover {
+  background-color: #54668e;
+  color: #f5f6e6;
+}
+
+.btn-primary {
+  background-color: #54668e;
+  border-color: #54668e;
+}
+
+.btn-primary:hover {
+  background-color: #363955;
+}
+
+.btn-link {
+  color: #54668e;
+}
+
+.btn-link:hover {
+  text-decoration: underline;
+  color: #363955;
+}
+
+/* Imágenes redondeadas */
+.rounded-circle {
+  border: 2px solid #54668e;
+}
+
+/* Estilo para textareas */
+textarea {
+  background-color: #e8e8e8;
+  color: #363955;
+}

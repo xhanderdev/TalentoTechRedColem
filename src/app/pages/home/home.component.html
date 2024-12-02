@@ -1,0 +1,92 @@
+<app-navbar></app-navbar>
+
+<!-- Contenedor Principal -->
+<div class="container mt-4">
+  <div class="row">
+    <!-- Barra lateral izquierda -->
+    <div class="col-md-3">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Mi Perfil</h5>
+          <div class="text-center mb-3">
+            <img
+              src="https://e7.pngegg.com/pngimages/258/854/png-clipart-spongebob-spongebob.png"
+              class="rounded-circle"
+              alt="Profile"
+              width="100"
+            />
+            <p class="mt-2 mb-0">Usuario Nombre</p>
+          </div>
+          <div class="d-grid gap-2">
+            <button class="btn btn-outline-primary">
+              <a href="http://localhost:4200/perfil">Editar Perfil</a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sección de publicaciones -->
+    <div class="col-md-6">
+      <!-- Crear publicación -->
+      <app-crear-pub></app-crear-pub>
+
+      <!-- Detalles de publicaciones -->
+      <app-destalle-pub></app-destalle-pub>
+    </div>
+
+    <!-- Barra lateral derecha -->
+    <div class="col-md-3">
+      <div class="card mb-4">
+        <div class="card-body">
+          <h5 class="card-title">Sugerencias</h5>
+          <div class="d-flex align-items-center mb-2">
+            <img
+              src="https://e7.pngegg.com/pngimages/258/854/png-clipart-spongebob-spongebob.png"
+              class="rounded-circle me-2"
+              width="32"
+              height="32"
+            />
+            <div>
+              <h6 class="mb-0">Usuario Ejemplo</h6>
+              <button class="btn btn-sm btn-primary">Seguir</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sección de navegación adicional -->
+  <div class="row mt-4">
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Emprendimientos</h5>
+          <p class="card-text">Explora proyectos y negocios innovadores.</p>
+          <a routerLink="/emprendimiento/list" class="btn btn-primary">Ver más</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Publicaciones</h5>
+          <p class="card-text">Comparte ideas y encuentra inspiración.</p>
+          <a routerLink="/publicacion/list" class="btn btn-primary">Ver más</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Actividades</h5>
+          <p class="card-text">Participa en eventos y actividades interesantes.</p>
+          <a routerLink="/actividad/list" class="btn btn-primary">Ver más</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<app-footer></app-footer>

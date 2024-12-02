@@ -1,0 +1,21 @@
+
+/* Cambia el fondo del navbar */
+.navbar {
+    background-color: #2C3E50; /* Color de fondo */
+    font-family: 'Montserrat', sans-serif; /* Fuente del texto */
+}
+
+/* Cambia el color del texto del navbar */
+.navbar a {
+    color: #BDC3C7; /* Color del texto */
+    text-decoration: none; /* Elimina el subrayado */
+    padding: 10px 15px; /* Espaciado interno */
+    display: inline-block; /* Asegura que los elementos se alineen correctamente */
+}
+
+/* Cambia el color del texto al pasar el mouse */
+.navbar a:hover {
+    color: #F5F6E6; /* Color del texto al hacer hover */
+    background-color: #54668e; /* Fondo al pasar el mouse */
+    border-radius: 5px; /* Bordes redondeados */
+}
