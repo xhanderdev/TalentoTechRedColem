@@ -1,2 +1,1 @@
-export interface EmprendimientoModelTs {
-}
+export interface EmprendimientoModelTs {}

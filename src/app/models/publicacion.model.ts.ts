@@ -1,2 +1,1 @@
-export interface PublicacionModelTs {
-}
+export interface PublicacionModelTs {}
