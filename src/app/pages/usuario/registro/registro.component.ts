@@ -13,8 +13,7 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './registro.component.css'
 })
 export class RegistroComponent {
-  usuario:Usuario={
-    idUsuario: 0,
+  usuario: Omit<Usuario, 'idUsuario'> = {// se corrigue lo de id -> por que es auto incrementado
     nombre: '',
     apellido: '',
     correoElectronico: '',
@@ -24,10 +23,9 @@ export class RegistroComponent {
     fotoPerfil: '',
     biografia: '',
     sitioWeb: '',
-    activo: true, //por defecto
+    activo: true, // Valor por defecto
     ciudad: ''
-
-  }
+  };
 
   constructor(private usurioservicio: UsuarioService){}
 
