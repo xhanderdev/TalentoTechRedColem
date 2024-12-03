@@ -3,6 +3,8 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';//importa observable
 
+import { PerfilComponent } from './../pages/usuario/perfil/perfil.component';
+
 export interface Usuario{
   // se elimino el id 
   nombre: string;
