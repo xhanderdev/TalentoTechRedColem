@@ -1,15 +1,31 @@
 <div *ngIf="isVisible" class="chat-container" [ngClass]="{'minimized': isMinimized}">
-    <div class="chat-header">
-      <button (click)="toggleMinimize()" class="minimize-btn">
-        {{ isMinimized ? 'Abrir' : 'Cerrar' }}
-      </button>
+  <!-- Encabezado del chat -->
+  <div class="chat-header">
+    <div class="chat-status">
+      <span class="status-dot"></span>
+      <span class="status-text">En línea</span>
     </div>
-    
-    <div class="chat-body" *ngIf="!isMinimized">
-      <div class="messages">
-        <!-- Aquí puedes agregar el contenido del chat -->
+    <button (click)="toggleMinimize()" class="minimize-btn">
+      {{ isMinimized ? 'Abrir' : 'Cerrar' }}
+    </button>
+  </div>
+
+  <!-- Cuerpo del chat -->
+  <div class="chat-body" *ngIf="!isMinimized">
+    <div class="messages">
+      <!-- Renderiza los mensajes -->
+      <div *ngFor="let message of messages" class="message">
+        {{ message }}
       </div>
-      <input type="text" placeholder="Escribe un mensaje..." />
+    </div>
+    <div class="chat-input">
+      <input 
+        type="text" 
+        [(ngModel)]="newMessage" 
+        placeholder="Escribe un mensaje..." 
+        (keyup.enter)="sendMessage()" 
+      />
+      <button class="send-btn" (click)="sendMessage()">Enviar</button>
     </div>
   </div>
-  
+</div>
