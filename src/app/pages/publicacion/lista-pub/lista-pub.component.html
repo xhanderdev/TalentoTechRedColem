@@ -1,37 +1,51 @@
-<p>Prueba listado Publicación</p>
+<header class="text-center my-4">
+  <h1 class="header-title">📝 Publicaciones</h1>
+</header>
 
-<div class="container">
-  <div class="row">
-    <div class="col">
-      <h1>Listado de Publicaciones</h1>
 
-      <table class="table">
-        <thead>
-          <tr>
-            <th scope="col">Id Publicación</th>
-            <th scope="col">Título</th>
-            <th scope="col">Contenido</th>
-            <th scope="col">Fecha de Creación</th>
-            <th scope="col">Usuario</th>
-            <th scope="col">Emprendimiento</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr *ngFor="let pub of publicaciones">
-            <th scope="row">{{ pub.idPublicacion }}</th>
-            <td>{{ pub.titulo }}</td>
-            <td>{{ pub.contenido }}</td>
-            <td>{{ pub.fechaCreacion }}</td>
-            <td>{{ pub }}</td>
-            <td>{{ pub }}</td>
-          </tr>
-        </tbody>
-      </table>
+<div class="container mt-4">
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+      <!-- Listado de Publicaciones -->
+      <h5 class="mb-3">Publicaciones</h5>
 
-      <!-- Crear publicación -->
-      <button class="btn btn-primary" routerLink="/crear-publicacion">
-        Crear Publicación
-      </button>
+      <!-- Iteración sobre publicaciones -->
+      <div *ngFor="let pub of publicaciones" class="card mb-3 shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title text-primary">{{ pub.titulo }}</h5>
+          <p class="card-text text-secondary">{{ pub.contenido }}</p>
+
+          <!-- Imagen si existe -->
+          <div *ngIf="pub.urlImagen" class="mb-3">
+            <img
+              [src]="pub.urlImagen"
+              alt="Imagen de la publicación"
+              class="img-fluid rounded"
+            />
+          </div>
+
+          <!-- Video si existe -->
+          <div *ngIf="pub.urlVideo">
+            <video controls class="w-100 rounded">
+              <source [src]="pub.urlVideo" type="video/mp4" />
+              Tu navegador no soporta el video.
+            </video>
+          </div>
+
+          <!-- Botones de interacción -->
+          <div class="d-flex justify-content-between align-items-center mt-3">
+            <button class="btn btn-outline-primary btn-sm">
+              <i class="bi bi-hand-thumbs-up"></i> Me gusta
+            </button>
+            <button class="btn btn-outline-secondary btn-sm">
+              <i class="bi bi-chat"></i> Comentar
+            </button>
+            <button class="btn btn-outline-success btn-sm">
+              <i class="bi bi-share"></i> Compartir
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
