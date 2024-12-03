@@ -1,60 +1,106 @@
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <a class="navbar-brand d-flex align-items-center" href="#">
+      <img src="/logo.png" alt="logo-nav" title="logo-nav" class="navbar-logo">
+      <h2>RedColem</h2>
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">Acerca de</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contacto</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
 <!-- Login Section -->
 <div class="login">
-    <div class="login-card text-center">
-        <h2 class="text-center mb-4">Inicia Sesión</h2>
-  
-        <div class="d-flex justify-content-center gap-3 mb-4">
-            <!-- Facebook Button -->
-            <button class="btn d-flex align-items-center justify-content-center" style="border: 1px solid #E0E0E0; border-radius: 8px; padding: 10px 20px; background-color: #FFFFFF; width: 150px;">
-                <img src="https://cdn-icons-png.flaticon.com/512/174/174848.png" alt="GitHub" style="width: 20px; height: 20px; margin-right: 10px;">
-                <span style="font-weight: bold;">Facebook</span>
-            </button>
-  
-            <!-- Google Button -->
-            <button class="btn d-flex align-items-center justify-content-center" style="border: 1px solid #E0E0E0; border-radius: 8px; padding: 10px 20px; background-color: #FFFFFF; width: 150px;">
-                <img src="https://cdn-icons-png.flaticon.com/512/300/300221.png" alt="Google" style="width: 20px; height: 20px; margin-right: 10px;">
-                <span style="font-weight: bold;">Google</span>
-            </button>
-        </div>
-  
-        <div class="text-center mt-3">o ingresa tus credenciales</div>
-        <hr class="my-4">
-  
-        <!-- Login Form -->
-        <form>
-            <div class="mb-3">
-                <div class="input-group">
-                    <span class="input-group-text" id="email-addon">
-                        <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email Icon" style="width: 20px;">
-                    </span>
-                    <input type="email" class="form-control" id="email" placeholder="Email" aria-label="Email" aria-describedby="email-addon">
-                </div>
-            </div>
-  
-            <div class="mb-3">
-                <div class="input-group">
-                    <span class="input-group-text" id="password-addon">
-                        <img src="https://cdn-icons-png.flaticon.com/512/3064/3064155.png" alt="Password Icon" style="width: 20px;">
-                    </span>
-                    <input type="password" class="form-control" id="password" placeholder="Password" aria-label="Password" aria-describedby="password-addon">
-                </div>
-            </div>
+  <div class="login-card text-center">
+    <h2 class="text-center mb-4">Inicia Sesión</h2>
 
-            <div class="mb-3 form-check">
-                <input type="checkbox" class="form-check-input" id="remember">
-                <label class="form-check-label" for="remember">Recordarme</label>
-            </div>
+    <div class="d-flex justify-content-center gap-3 mb-4">
+      <!-- Facebook Button -->
+      <button class="btn social-btn">
+        <img src="https://cdn-icons-png.flaticon.com/512/174/174848.png" alt="Facebook" class="social-icon">
+        <span>Facebook</span>
+      </button>
 
-            <button type="submit" class="btn btn-primary w-100"><a href="http://localhost:4200/home" style="color: #F5F6E6">Ingresar</a></button>
-
-            <div class="text-center mt-3">
-                <a href="#">¿Olvidaste tu contraseña?</a>
-            </div>
-        </form>
+      <!-- Google Button -->
+      <button class="btn social-btn">
+        <img src="https://cdn-icons-png.flaticon.com/512/300/300221.png" alt="Google" class="social-icon">
+        <span>Google</span>
+      </button>
     </div>
+
+    <div class="text-center mt-3">o ingresa tus credenciales</div>
+    <hr class="my-4">
+
+    <!-- Login Form -->
+    <form>
+      <div class="mb-3">
+        <div class="input-group">
+          <span class="input-group-text">
+            <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email Icon" class="input-icon">
+          </span>
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            placeholder="Email"
+            aria-label="Email"
+          >
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <div class="input-group">
+          <span class="input-group-text">
+            <img src="https://cdn-icons-png.flaticon.com/512/3064/3064155.png" alt="Password Icon" class="input-icon">
+          </span>
+          <input
+            type="password"
+            class="form-control"
+            id="password"
+            placeholder="Password"
+            aria-label="Password"
+          >
+        </div>
+      </div>
+
+      <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="remember">
+        <label class="form-check-label" for="remember">Recordarme</label>
+      </div>
+
+      <button type="submit" class="btn btn-primary w-100">
+        <a href="http://localhost:4200/home" class="btn-link">Ingresar</a>
+      </button>
+
+      <div class="text-center mt-3">
+        <a href="#">¿Olvidaste tu contraseña?</a>
+      </div>
+    </form>
   </div>
 
   <div class="text-center mt-4">
-    <p>¿No tienes cuenta? <a href="http://localhost:4200/register">Regístrate</a></p>
+    <p>¿No tienes cuenta? <a href="http://localhost:4200/registro" style="cursor: pointer;">Regístrate</a></p>
   </div>
+</div>
+

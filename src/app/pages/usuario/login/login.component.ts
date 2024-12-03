@@ -4,6 +4,7 @@ import { AuthService } from '../../../services/auth.service';
 
 @Component({
     selector: 'app-login',
+    standalone: false,
     templateUrl: './login.component.html',
     styleUrls: ['./login.component.css'],
 })
@@ -12,6 +13,8 @@ export class LoginComponent {
     password: string = '';
 
     constructor(private authService: AuthService) {}
+
+
 
     onSubmit(): void {
         this.authService.login(this.email, this.password).subscribe({

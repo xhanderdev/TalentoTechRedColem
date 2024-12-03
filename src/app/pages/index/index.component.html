@@ -1,0 +1,60 @@
+<app-header></app-header>
+<!-- Contenedor de Bienvenida -->
+<!-- Contenedor principal de Bienvenida -->
+<div class="d-flex align-items-center justify-content-center welcome-container">
+    <div class="text-center">
+      <h1 class="display-4 fw-bold">
+        Bienvenido a <span class="highlight-text">RedColem</span>
+      </h1>
+      <p class="lead mt-3">
+        Tu red social para <strong>conectar</strong> e <strong>innovar</strong>.
+      </p>
+      <button class="btn btn-lg join-button">
+        <h4><a routerLink="/registro" class="join-link">¡Únete ahora!</a></h4>
+      </button>
+    </div>
+  </div>
+
+  <!-- Contenedor principal de Contenido -->
+  <div class="d-flex align-items-center justify-content-center content-container">
+    <div class="container text-center">
+      <h2 class="text-center">Descubre, conecta y comparte en RedColem</h2>
+      <div class="row mt-4">
+        <!-- Emprendimientos -->
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Emprendimientos</h5>
+              <hr class="my-4">
+              <p class="card-text">Explora proyectos y negocios innovadores.</p>
+              <a routerLink="/emprendimiento/list" class="btn btn-primary custom-button">Ver más</a>
+            </div>
+          </div>
+        </div>
+        <!-- Publicaciones -->
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Publicaciones</h5>
+              <hr class="my-4">
+              <p class="card-text">Comparte ideas y encuentra inspiración.</p>
+              <a routerLink="/publicacion/list" class="btn btn-primary custom-button">Ver más</a>
+            </div>
+          </div>
+        </div>
+        <!-- Actividades -->
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Actividades</h5>
+              <hr class="my-4">
+              <p class="card-text">Participa en eventos y actividades interesantes.</p>
+              <a routerLink="./pages/login/login.component" class="btn btn-primary custom-button">Ver más</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <app-footer></app-footer>

@@ -1,0 +1,64 @@
+/* Contenedor de Bienvenida */
+.welcome-container {
+    background-color: #F5F6E6;
+    border-radius: 15px;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.15);
+    padding: 2rem;
+    margin: 2rem 0;
+  }
+  
+  .welcome-container .highlight-text {
+    color: #363955;
+  }
+  
+  .welcome-container .join-button {
+    background-color: #54668E;
+    color: #F5F6E6;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 30px;
+    transition: all 0.3s ease;
+  }
+  
+  .welcome-container .join-button:hover {
+    background-color: #363955;
+  }
+  
+  .welcome-container .join-link {
+    color: #F5F6E6;
+    text-decoration: none;
+  }
+  
+  /* Contenedor de Contenido */
+  .content-container {
+    background-color: #F5F6E6;
+    border-radius: 15px;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.15);
+    padding: 2rem;
+    margin: 2rem 0;
+  }
+  
+  .content-container .card-title {
+    color: #363955;
+  }
+  
+  .content-container .card-text {
+    color: #54668E;
+  }
+  
+  .content-container .custom-button {
+    background-color: #54668E;
+    color: #F5F6E6;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 30px;
+    transition: all 0.3s ease;
+  }
+  
+  .content-container .custom-button:hover {
+    background-color: #363955;
+  }
+  
+
+
+

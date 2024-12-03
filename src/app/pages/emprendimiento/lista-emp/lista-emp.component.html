@@ -1,71 +1,9 @@
-<!DOCTYPE html>
-<html lang="es-CO">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Listado de Emprendimientos</title>
-  <style>
-    body {
-      font-family: 'Arial', sans-serif;
-      background-color: #f4f4f4;
-      margin: 0;
-      padding: 0;
-    }
-    header {
-      background-color: #363955;
-      color: white;
-      padding: 10px 0;
-      text-align: center;
-    }
-    .container {
-      width: 80%;
-      margin: 20px auto;
-      padding: 20px;
-      background-color: white;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-    h1 {
-      text-align: center;
-      color: #333;
-    }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 20px;
-    }
-    th, td {
-      padding: 12px;
-      text-align: left;
-      border-bottom: 1px solid #ddd;
-    }
-    th {
-      background-color: #f2f2f2;
-      color: #333;
-    }
-    tr:hover {
-      background-color: #f1f1f1;
-    }
-    .btn {
-      display: inline-block;
-      padding: 10px 20px;
-      margin: 10px 0;
-      background-color: #363955;
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
-    }
-    .btn:hover {
-      background-color: #363955;
-    }
-  </style>
-</head>
-<body>
-
+<header>
+  <h1>Emprendimientos Registrados</h1>
+</header>
 
 <div class="container">
-  <h1>Emprendimientos Registrados</h1>
-    <table>
+  <table>
     <thead>
       <tr>
         <th>No</th>
@@ -79,12 +17,9 @@
         <td>{{ emp.idEmprendimiento }}</td>
         <td>{{ emp.nombre }}</td>
         <td>{{ emp.descripcion }}</td>
-        <td><a href="{{ emp.urlSitioWeb }}" target="_blank">Visitar</a></td>
+        <td><a [href]="emp.urlSitioWeb" target="_blank">Visitar</a></td>
       </tr>
     </tbody>
   </table>
 </div>
-
-</body>
-</html>
 

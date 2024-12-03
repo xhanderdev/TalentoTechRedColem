@@ -1,0 +1,41 @@
+/* Navbar container */
+.custom-navbar {
+    background-color: #363955;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Brand styling */
+  .navbar-brand {
+    color: #F5F6E6;
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+
+  .navbar-logo {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+  }
+
+  .navbar-title {
+    margin: 0;
+  }
+
+  /* Toggler button */
+  .navbar-toggler {
+    border-color: #F5F6E6;
+  }
+
+  .navbar-toggler-icon {
+    background-color: #F5F6E6;
+  }
+
+  /* Links */
+  .nav-link {
+    color: #E8E8E8;
+    font-weight: 500;
+  }
+
+  .nav-link:hover {
+    color: #ffffff;
+  }
