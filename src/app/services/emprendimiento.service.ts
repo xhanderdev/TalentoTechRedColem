@@ -13,7 +13,7 @@ export interface Emprendimiento {
   providedIn: 'root',
 })
 export class EmprendimientoService {
-  private apiUrl = 'http://localhost:8080/api/emprendimiento-categorias'; // Cambia a tu endpoint real
+  private apiUrl = 'http://localhost:8080/api/emprendimiento'; // Cambia a tu endpoint real
 
   constructor(private http: HttpClient) {}
 

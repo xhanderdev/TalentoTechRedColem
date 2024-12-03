@@ -2,6 +2,7 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { CrearEmpComponent } from './crear-emp.component';
 
+
 describe('CrearEmpComponent', () => {
   let component: CrearEmpComponent;
   let fixture: ComponentFixture<CrearEmpComponent>;
@@ -21,3 +22,5 @@ describe('CrearEmpComponent', () => {
     expect(component).toBeTruthy();
   });
 });
+
+

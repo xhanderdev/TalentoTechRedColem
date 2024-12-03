@@ -1,1 +1,34 @@
-<p>crear-emp works!</p>
+<p>Crear  Emprendimientos</p>
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <h1>Emprendimientos Registrados</h1>
+
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Descripción</th>
+            <th scope="col">URL Sitio Web</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let emp of emprendimientos">
+            <td>{{ emp.idEmprendimiento }}</td>
+            <td>{{ emp.nombre }}</td>
+            <td>{{ emp.descripcion }}</td>
+            <td>{{ emp.urlSitioWeb }}</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- Botón para crear nuevo emprendimiento -->
+      <button class="btn btn-primary" routerLink="/crear-emprendimiento">
+        Crear Emprendimiento
+      </button>
+    </div>
+  </div>
+</div>
+
