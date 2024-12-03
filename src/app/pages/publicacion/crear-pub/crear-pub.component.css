@@ -1,0 +1,70 @@
+/* Estilo general del contenedor */
+.container.card {
+    background-color: #e8e8e8; /* Fondo suave */
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra */
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  /* Títulos y etiquetas */
+  .form-label {
+    font-family: 'Roboto', sans-serif;
+    color: #363955; /* Títulos claros */
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
+  input, textarea {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffffff; /* Fondo blanco */
+    border: 1px solid #BDC3C7; /* Borde suave */
+    color: #363955; /* Texto oscuro */
+  }
+  
+  input:focus, textarea:focus {
+    border-color: #2980B9; /* Borde azul al hacer focus */
+    outline: none; /* Eliminar el outline por defecto */
+  }
+  
+  /* Estilo para los botones */
+  button {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.875rem;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+  }
+  
+  /* Estilos de los botones secundarios (Foto, Video) */
+  .btn-outline-secondary {
+    color: #2980B9; /* Color primario para los botones */
+    border-color: #2980B9;
+  }
+  
+  .btn-outline-secondary:hover {
+    background-color: #2980B9;
+    color: white; /* Texto blanco al pasar el mouse */
+  }
+  
+  .btn-primary {
+    background-color: #2980B9; /* Fondo azul para el botón "Publicar" */
+    color: white; /* Texto blanco */
+    border-color: #2980B9;
+  }
+  
+  .btn-primary:hover {
+    background-color: #1F618D; /* Fondo azul más oscuro al pasar el mouse */
+    border-color: #1F618D;
+  }
+  
+  /* Espaciado en los botones */
+  .d-flex button + button {
+    margin-left: 0.5rem; /* Espacio entre botones */
+  }
+  
+  /* Estilo para los iconos en los botones */
+  .bi {
+    font-size: 1.2rem; /* Tamaño de los iconos */
+    margin-right: 0.5rem; /* Espacio entre icono y texto */
+  }
+  

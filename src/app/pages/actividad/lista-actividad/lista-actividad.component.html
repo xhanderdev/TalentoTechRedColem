@@ -4,7 +4,7 @@
 
 <div class="container">
   <div class="row">
-    <!-- Aquí iteramos sobre cada actividad y generamos una tarjeta -->
+    <!-- Iteración sobre las actividades -->
     <div class="col-md-6 col-lg-4 mb-4" *ngFor="let actividad of actividades">
       <div class="card shadow-sm">
         <div class="card-body">
@@ -17,9 +17,10 @@
           <p class="card-text text-secondary">{{ actividad.descripcion }}</p>
           <div>
             <span class="badge" [ngClass]="{
-              'bg-success': actividad.estado === 'Activo',
-              'bg-danger': actividad.estado === 'Cancelado',
-              'bg-warning': actividad.estado === 'Pendiente'
+              'bg-success': actividad.estado === 'En progreso',
+              'bg-primary': actividad.estado === 'Completada',
+              'bg-warning': actividad.estado === 'Pendiente',
+              'bg-info': actividad.estado === 'En espera'
             }">
               {{ actividad.estado }}
             </span>

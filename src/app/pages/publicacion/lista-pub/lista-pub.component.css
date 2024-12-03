@@ -1,0 +1,99 @@
+/* Estilo principal del encabezado */
+header {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .header-title {
+    font-family: 'Montserrat', sans-serif;
+    color: #363955; /* Color principal del título */
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  /* Contenedor principal */
+  .container {
+    margin-top: 2rem;
+  }
+  
+  /* Publicaciones */
+  .card {
+    background-color: #e8e8e8; /* Fondo suave */
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra */
+  }
+  
+  .card-title {
+    font-family: 'Montserrat', sans-serif;
+    color: #363955; /* Título de las publicaciones */
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  
+  .card-text {
+    font-family: 'Roboto', sans-serif;
+    color: #54668e; /* Texto de contenido */
+    font-size: 1rem;
+    margin-top: 0.5rem;
+  }
+  
+  /* Imagen en la publicación */
+  .card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Sombra de la imagen */
+  }
+  
+  /* Video en la publicación */
+  .card video {
+    border-radius: 10px;
+    margin-top: 1rem;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Sombra del video */
+  }
+  
+  /* Botones de interacción */
+  .card .btn {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.875rem;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+  }
+  
+  .btn-outline-primary {
+    color: #2980B9; /* Color primario */
+    border-color: #2980B9;
+  }
+  
+  .btn-outline-primary:hover {
+    background-color: #2980B9;
+    color: white;
+  }
+  
+  .btn-outline-secondary {
+    color: #BDC3C7;
+    border-color: #BDC3C7;
+  }
+  
+  .btn-outline-secondary:hover {
+    background-color: #BDC3C7;
+    color: white;
+  }
+  
+  .btn-outline-success {
+    color: #27AE60; /* Color verde */
+    border-color: #27AE60;
+  }
+  
+  .btn-outline-success:hover {
+    background-color: #27AE60;
+    color: white;
+  }
+  
+  /* Espaciado en los botones */
+  .card .btn + .btn {
+    margin-left: 0.5rem;
+  }
+  

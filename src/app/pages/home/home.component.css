@@ -1,6 +1,6 @@
 /* Fondo general */
 body {
-  background-color: #f5f6e6;
+  background-color: black;
   color: #363955;
 }
 
@@ -13,7 +13,7 @@ body {
 
 /* Títulos */
 .card-title {
-  color: #54668e;
+  color: black;
   font-weight: bold;
 }
 

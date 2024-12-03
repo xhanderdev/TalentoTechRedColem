@@ -1,53 +1,85 @@
+/* Estilo principal del encabezado */
+header {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.header-title {
+  font-family: 'Montserrat', sans-serif;
+  color: #363955; /* Color principal del título */
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* Contenedor de las actividades */
+.container {
+  margin-top: 2rem;
+}
+
+/* Tarjetas de actividad */
 .card {
-  background-color: #f4f4f4; /* Fondo claro */
-  border-radius: 10px; /* Bordes redondeados */
-  padding: 1rem; /* Espaciado interno */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
-  border: none; /* Sin borde */
+  background-color: #e8e8e8; /* Fondo suave */
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra */
 }
 
 .card-title {
-  font-weight: bold; /* Negrita para el título */
-  color: #2c3e50; /* Azul oscuro para el título */
-  margin-bottom: 0.5rem; /* Espaciado debajo del título */
+  font-family: 'Montserrat', sans-serif;
+  color: #363955; /* Título de la actividad */
+  font-size: 1.25rem;
+  font-weight: bold;
 }
 
 .card-subtitle {
-  font-size: 0.9rem; /* Subtítulo más pequeño */
-  color: #7f8c8d; /* Gris tenue */
-  margin-bottom: 1rem; /* Espaciado debajo del subtítulo */
+  font-family: 'Roboto', sans-serif;
+  color: #BDC3C7; /* Subtítulo en color tenue */
+  font-size: 0.9rem;
 }
 
 .card-text {
-  color: #6c757d; /* Texto secundario */
-  font-size: 0.95rem; /* Tamaño del texto ligeramente mayor */
-  margin-bottom: 1rem; /* Espaciado inferior */
+  font-family: 'Roboto', sans-serif;
+  color: #54668e; /* Texto de contenido */
+  font-size: 1rem;
+  margin-top: 0.5rem;
 }
 
-.badge {
-  font-size: 0.85rem;
-  padding: 0.4em 0.6em;
-  text-transform: capitalize;
+.card .badge {
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.875rem;
+  padding: 0.5rem 1rem;
   border-radius: 5px;
+  text-transform: uppercase;
 }
 
-.badge.bg-success {
-  background-color: #27ae60; /* Verde */
+/* Colores dinámicos para el estado */
+.bg-success {
+  background-color: #27AE60 !important; /* Verde */
+  color: #2c3e50; /* Letra en color oscuro */
 }
 
-.badge.bg-danger {
-  background-color: #e74c3c; /* Rojo */
+.bg-danger {
+  background-color: #E74C3C !important; /* Rojo */
+  color: #ecf0f1; /* Letra en color claro */
 }
 
-.badge.bg-warning {
-  background-color: #f39c12; /* Amarillo */
+.bg-warning {
+  background-color: #F1C40F !important; /* Amarillo */
+  color: #2c3e50; /* Letra en color oscuro */
 }
 
-.shadow-sm {
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
+/* Responsivo */
+@media (max-width: 768px) {
+  .card-title {
+    font-size: 1rem; /* Títulos más pequeños en pantallas pequeñas */
+  }
 
-.shadow-sm:hover {
-  transform: translateY(-5px); /* Efecto hover */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra más intensa */
+  .card-subtitle {
+    font-size: 0.8rem;
+  }
+
+  .card-text {
+    font-size: 0.9rem;
+  }
 }
