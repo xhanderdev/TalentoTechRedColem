@@ -1,58 +1,51 @@
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
-  }
-  
-  header {
-    background-color: #363955;
-    color: white;
-    padding: 10px 0;
-    text-align: center;
-  }
-  
-  .container {
-    width: 80%;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  h1 {
-    text-align: center;
-    color: #333;
-  }
-  
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-  }
-  
-  th, td {
-    padding: 12px;
-    text-align: left;
-    border-bottom: 1px solid #ddd;
-  }
-  
-  th {
-    background-color: #f2f2f2;
-    color: #333;
-  }
-  
-  tr:hover {
-    background-color: #f1f1f1;
-  }
-  
-  a {
-    color: #363955;
-    text-decoration: none;
-  }
-  
-  a:hover {
-    text-decoration: underline;
-  }
-  
+/* Encabezado */
+.header-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+/* Tarjeta personalizada */
+.custom-card {
+  background-color: #f4f4f4; /* Fondo claro */
+  border-radius: 10px; /* Bordes redondeados */
+  padding: 1rem; /* Espaciado interno */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  border: none; /* Sin borde */
+}
+
+.custom-card .card-title {
+  font-weight: bold; /* Negrita para el título */
+  color: #2c3e50; /* Azul oscuro */
+  margin-bottom: 0.5rem;
+}
+
+.custom-card .card-text {
+  color: #6c757d; /* Gris tenue */
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+
+.custom-card .btn {
+  background-color: #4a4a4a; /* Botón oscuro */
+  color: #fff;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  text-decoration: none;
+}
+
+.custom-card .btn:hover {
+  background-color: #3a3a3a; /* Efecto hover */
+  color: #fff;
+}
+
+/* Animación en hover */
+.shadow-sm {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.shadow-sm:hover {
+  transform: translateY(-5px); /* Elevación al pasar el mouse */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra más intensa */
+}

@@ -1,25 +1,21 @@
-<header>
-  <h1>Emprendimientos Registrados</h1>
+<header class="text-center my-4">
+  <h1 class="header-title">🌟 Emprendimientos Registrados</h1>
 </header>
 
 <div class="container">
-  <table>
-    <thead>
-      <tr>
-        <th>No</th>
-        <th>Nombre</th>
-        <th>Descripción</th>
-        <th>URL Sitio Web</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr *ngFor="let emp of emprendimientos">
-        <td>{{ emp.idEmprendimiento }}</td>
-        <td>{{ emp.nombre }}</td>
-        <td>{{ emp.descripcion }}</td>
-        <td><a [href]="emp.urlSitioWeb" target="_blank">Visitar</a></td>
-      </tr>
-    </tbody>
-  </table>
+  <div class="row">
+    <!-- Aquí iteramos sobre cada emprendimiento -->
+    <div class="col-md-6 col-lg-4 mb-4" *ngFor="let emp of emprendimientos">
+      <div class="card custom-card shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title text-primary">{{ emp.nombre }}</h5>
+          <p class="card-text text-secondary">{{ emp.descripcion }}</p>
+          <a [href]="emp.urlSitioWeb" target="_blank" class="btn btn-primary btn-sm">
+            Visitar Sitio Web
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 

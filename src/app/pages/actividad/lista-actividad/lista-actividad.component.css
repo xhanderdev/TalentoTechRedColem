@@ -1,0 +1,53 @@
+.card {
+  background-color: #f4f4f4; /* Fondo claro */
+  border-radius: 10px; /* Bordes redondeados */
+  padding: 1rem; /* Espaciado interno */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  border: none; /* Sin borde */
+}
+
+.card-title {
+  font-weight: bold; /* Negrita para el título */
+  color: #2c3e50; /* Azul oscuro para el título */
+  margin-bottom: 0.5rem; /* Espaciado debajo del título */
+}
+
+.card-subtitle {
+  font-size: 0.9rem; /* Subtítulo más pequeño */
+  color: #7f8c8d; /* Gris tenue */
+  margin-bottom: 1rem; /* Espaciado debajo del subtítulo */
+}
+
+.card-text {
+  color: #6c757d; /* Texto secundario */
+  font-size: 0.95rem; /* Tamaño del texto ligeramente mayor */
+  margin-bottom: 1rem; /* Espaciado inferior */
+}
+
+.badge {
+  font-size: 0.85rem;
+  padding: 0.4em 0.6em;
+  text-transform: capitalize;
+  border-radius: 5px;
+}
+
+.badge.bg-success {
+  background-color: #27ae60; /* Verde */
+}
+
+.badge.bg-danger {
+  background-color: #e74c3c; /* Rojo */
+}
+
+.badge.bg-warning {
+  background-color: #f39c12; /* Amarillo */
+}
+
+.shadow-sm {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.shadow-sm:hover {
+  transform: translateY(-5px); /* Efecto hover */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra más intensa */
+}

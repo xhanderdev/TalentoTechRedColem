@@ -1,1 +1,29 @@
-<p>lista-actividad works!</p>
+<p class="text-center my-4">📅 Lista de Actividades</p>
+
+<div class="container">
+  <div class="row">
+    <!-- Aquí iteramos sobre cada actividad y generamos una tarjeta -->
+    <div class="col-md-6 col-lg-4 mb-4" *ngFor="let actividad of actividades">
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title text-primary">{{ actividad.nombre }}</h5>
+          <h6 class="card-subtitle mb-2 text-muted">#{{ actividad.idActividad }}</h6>
+          <p class="card-text">
+            <strong>Inicio:</strong> {{ actividad.fechaInicio }}<br>
+            <strong>Fin:</strong> {{ actividad.fechaFin }}
+          </p>
+          <p class="card-text text-secondary">{{ actividad.descripcion }}</p>
+          <div>
+            <span class="badge" [ngClass]="{
+              'bg-success': actividad.estado === 'Activo',
+              'bg-danger': actividad.estado === 'Cancelado',
+              'bg-warning': actividad.estado === 'Pendiente'
+            }">
+              {{ actividad.estado }}
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

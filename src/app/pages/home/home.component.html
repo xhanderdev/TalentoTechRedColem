@@ -6,38 +6,33 @@
     <!-- Barra lateral izquierda -->
     <div class="col-md-3">
       <div class="card">
-        <div class="card-body">
+        <div class="card-body text-center">
           <h5 class="card-title">Mi Perfil</h5>
-          <div class="text-center mb-3">
-            <img
-              src="https://e7.pngegg.com/pngimages/258/854/png-clipart-spongebob-spongebob.png"
-              class="rounded-circle"
-              alt="Profile"
-              width="100"
-            />
-            <p class="mt-2 mb-0">Usuario Nombre</p>
-          </div>
+          <img
+            src="https://e7.pngegg.com/pngimages/258/854/png-clipart-spongebob-spongebob.png"
+            class="rounded-circle mb-3"
+            alt="Profile"
+            width="100"
+          />
+          <p class="mt-2 mb-0">Usuario Nombre</p>
           <div class="d-grid gap-2">
             <button class="btn btn-outline-primary">
-              <a href="http://localhost:4200/perfil">Editar Perfil</a>
+              <a href="http://localhost:4200/perfil" class="text-decoration-none text-dark">Editar Perfil</a>
             </button>
           </div>
         </div>
       </div>
     </div>
-
+    
     <!-- Sección de publicaciones -->
     <div class="col-md-6">
       <!-- Crear publicación -->
       <app-crear-pub></app-crear-pub>
 
-      
-      <app-lista-pub></app-lista-pub>
-      <app-crear-emp></app-crear-emp>
-      <app-lista-emp></app-lista-emp>
- 
       <!-- Detalles de publicaciones -->
-      <app-destalle-pub></app-destalle-pub>
+      <div class="mt-3">
+        
+      </div>
     </div>
 
     <!-- Barra lateral derecha -->
@@ -45,6 +40,7 @@
       <div class="card mb-4">
         <div class="card-body">
           <h5 class="card-title">Sugerencias</h5>
+          <!-- Sugerencia de usuarios -->
           <div class="d-flex align-items-center mb-2">
             <img
               src="https://e7.pngegg.com/pngimages/258/854/png-clipart-spongebob-spongebob.png"
@@ -62,36 +58,11 @@
     </div>
   </div>
 
-  <!-- Sección de navegación adicional -->
-  <div class="row mt-4">
-    <div class="col-md-4">
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">Emprendimientos</h5>
-          <p class="card-text">Explora proyectos y negocios innovadores.</p>
-          <a routerLink="/emprendimiento/list" class="btn btn-primary">Ver más</a>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">Publicaciones</h5>
-          <p class="card-text">Comparte ideas y encuentra inspiración.</p>
-          <a routerLink="/publicacion/list" class="btn btn-primary">Ver más</a>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">Actividades</h5>
-          <p class="card-text">Participa en eventos y actividades interesantes.</p>
-          <a routerLink="/actividad/list" class="btn btn-primary">Ver más</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+  <!-- Sección de actividad reciente -->
+  <app-lista-actividad></app-lista-actividad>
+  <app-lista-emp></app-lista-emp>
 
+</div> <!-- Cierre del contenedor principal -->
+
+<!-- Pie de página fuera del contenedor principal -->
 <app-footer></app-footer>

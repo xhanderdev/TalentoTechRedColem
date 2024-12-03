@@ -1,12 +1,23 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import {
+  ActividadService,
+  Actividad,
+} from '../../../services/actividad.service';
 
 @Component({
   selector: 'app-lista-actividad',
-  standalone: false,
-  
   templateUrl: './lista-actividad.component.html',
-  styleUrl: './lista-actividad.component.css'
+  standalone: false,
+  styleUrls: ['./lista-actividad.component.css'],
 })
-export class ListaActividadComponent {
+export class ListaActividadComponent implements OnInit {
+  actividades: Actividad[] = [];
 
+  constructor(private actividadService: ActividadService) {}
+
+  ngOnInit(): void {
+    this.actividadService.getActividades().subscribe((data) => {
+      this.actividades = data;
+    });
+  }
 }
