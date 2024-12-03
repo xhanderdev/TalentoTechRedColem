@@ -26,6 +26,7 @@ import { ListadoUsuarioComponent } from './pages/usuario/listado-usuario/listado
 import { HomeComponent } from './pages/home/home.component';
 import { IndexComponent } from './pages/index/index.component';
 import { FooterComponent } from './shared/footer/footer.component';
+import { FloatingChatComponent } from './shared/floating-chat/floating-chat.component';
 
 
 
@@ -53,7 +54,8 @@ import { FooterComponent } from './shared/footer/footer.component';
     HomeComponent,
     IndexComponent,
     FooterComponent,
-    LoginComponent
+    LoginComponent,
+    FloatingChatComponent
 
     
 

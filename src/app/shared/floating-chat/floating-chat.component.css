@@ -1,0 +1,62 @@
+.chat-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    z-index: 1000;
+  }
+
+  .chat-container.minimized {
+    width: 80px;   /* Tamaño cuando está minimizado */
+    height: 80px;  /* Tamaño cuando está minimizado */
+    border-radius: 50%;  /* Forma circular */
+    bottom: 20px;
+    right: 20px;
+  }
+
+  .chat-header {
+    padding: 10px;
+    background-color: #3b5998;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px 10px 0 0; /* Solo en la parte superior */
+  }
+
+  .minimize-btn,
+  .close-btn {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  .chat-body {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .messages {
+    max-height: 200px;
+    overflow-y: auto;
+  }
+
+  input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+
+  /* Cuando está minimizado */
+  .chat-container.minimized .chat-body {
+    display: none; /* Ocultar el cuerpo del chat */
+  }

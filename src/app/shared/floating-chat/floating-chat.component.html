@@ -1,0 +1,15 @@
+<div *ngIf="isVisible" class="chat-container" [ngClass]="{'minimized': isMinimized}">
+    <div class="chat-header">
+      <button (click)="toggleMinimize()" class="minimize-btn">
+        {{ isMinimized ? 'Abrir' : 'Cerrar' }}
+      </button>
+    </div>
+    
+    <div class="chat-body" *ngIf="!isMinimized">
+      <div class="messages">
+        <!-- Aquí puedes agregar el contenido del chat -->
+      </div>
+      <input type="text" placeholder="Escribe un mensaje..." />
+    </div>
+  </div>
+  
