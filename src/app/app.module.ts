@@ -27,6 +27,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { IndexComponent } from './pages/index/index.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { FloatingChatComponent } from './shared/floating-chat/floating-chat.component';
+import { CalendarComponent } from './shared/calendar/calendar.component';
 
 
 
@@ -55,7 +56,8 @@ import { FloatingChatComponent } from './shared/floating-chat/floating-chat.comp
     IndexComponent,
     FooterComponent,
     LoginComponent,
-    FloatingChatComponent
+    FloatingChatComponent,
+    CalendarComponent
 
     
 

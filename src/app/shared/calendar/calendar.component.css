@@ -1,0 +1,81 @@
+/* Estilos generales para el calendario */
+.card {
+    border-radius: 10px;
+    border: none;
+    background-color: #e8e8e8;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Estilo del título del calendario */
+  .card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #2980b9;
+  }
+  
+  /* Estilo de los botones de mes anterior y siguiente */
+  .btn-outline-primary {
+    border-radius: 20px;
+    padding: 5px 15px;
+    font-size: 0.6rem;
+  }
+  
+  .btn-outline-primary:hover {
+    background-color: #2980b9;
+    color: #fff;
+  }
+  
+  .d-flex .btn {
+    font-weight: 600;
+  }
+  
+  /* Estilo del encabezado de la tabla del calendario */
+  .table th {
+    text-align: center;
+    font-weight: 600;
+    background-color: #f7f9fc;
+    color: #2980b9;
+    font-size: 0.7rem;
+  }
+  
+  /* Estilo de las celdas del calendario */
+  .table td {
+    text-align: center;
+    padding: 10px;
+    vertical-align: middle;
+    font-size: 0.7rem;
+  }
+  
+  /* Colores de los días de la semana */
+  .table td:nth-child(1),
+  .table th:nth-child(1) {
+    color: #e74c3c; /* Domingo en rojo */
+  }
+  
+  .table td:nth-child(7),
+  .table th:nth-child(7) {
+    color: #27ae60; /* Sábado en verde */
+  }
+  
+  /* Estilo para los días vacíos */
+  .table td[colspan] {
+    background-color: #f7f9fc;
+  }
+  
+  /* Resaltar el día actual */
+  .table td.active {
+    background-color: #f39c12;
+    color: #fff;
+    border-radius: 50%;
+  }
+  
+  /* Estilo responsivo para la tabla */
+  @media (max-width: 768px) {
+    .table {
+      width: 100%;
+    }
+    .table th, .table td {
+      padding: 6px;
+    }
+  }
+  
