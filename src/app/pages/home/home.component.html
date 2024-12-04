@@ -3,7 +3,123 @@
 <!-- Contenedor Principal -->
 <div class="container mt-4">
   <div class="row">
-    <!-- Barra lateral izquierda -->
+    <!-- Barra lateral izquierda (Sugerencias y Calendario) -->
+    <div class="col-md-3">
+      <div class="card mb-4 shadow-sm border-0">
+        <div class="card-body">
+          <h5 class="card-title text-primary mb-3">Sugerencias</h5>
+          <!-- Lista de sugerencias -->
+          <ul class="list-unstyled">
+            <li class="d-flex align-items-center justify-content-between mb-3">
+              <div class="d-flex align-items-center">
+                <img
+                  src="https://media.istockphoto.com/id/1464539429/es/foto/hombre-de-negocios-reflexivo-con-una-tableta-digital.jpg?s=612x612&w=0&k=20&c=ZuAqe0Uo1QCIkHPKEJkOS-ToRb-j3xt3QZSZvBNfrgg="
+                  class="rounded-circle border border-secondary me-2"
+                  width="40"
+                  height="40"
+                  alt="Martin"
+                />
+                <div>
+                  <h6 class="mb-0 fw-bold text-dark">Martin</h6>
+                  <small class="text-muted">Recomendado</small>
+                </div>
+              </div>
+              <button class="btn btn-sm btn-outline-primary px-3">Seguir</button>
+            </li>
+            <!-- Otras sugerencias de usuario aquí... -->
+          </ul>
+        </div>
+      </div>
+      
+      <!-- Calendario -->
+      <div class="card shadow-sm border-0">
+        <div class="card-body">
+          <h5 class="card-title text-primary mb-3">📅 Calendario</h5>
+          <div class="d-flex justify-content-between mb-2">
+            <button class="btn btn-outline-primary btn-sm">
+              <i class="bi bi-chevron-left"></i> Mes Anterior
+            </button>
+            <h6 class="fw-bold text-center">Diciembre 2024</h6>
+            <button class="btn btn-outline-primary btn-sm">
+              Mes Siguiente <i class="bi bi-chevron-right"></i>
+            </button>
+          </div>
+          
+          <div class="table-responsive">
+            <table class="table table-bordered table-sm w-75 mx-auto">
+              <thead>
+                <tr>
+                  <th class="text-center">Dom</th>
+                  <th class="text-center">Lun</th>
+                  <th class="text-center">Mar</th>
+                  <th class="text-center">Mié</th>
+                  <th class="text-center">Jue</th>
+                  <th class="text-center">Vie</th>
+                  <th class="text-center">Sáb</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="text-center">1</td>
+                  <td class="text-center">2</td>
+                  <td class="text-center">3</td>
+                  <td class="text-center">4</td>
+                  <td class="text-center">5</td>
+                  <td class="text-center">6</td>
+                  <td class="text-center">7</td>
+                </tr>
+                <tr>
+                  <td class="text-center">8</td>
+                  <td class="text-center">9</td>
+                  <td class="text-center">10</td>
+                  <td class="text-center">11</td>
+                  <td class="text-center">12</td>
+                  <td class="text-center">13</td>
+                  <td class="text-center">14</td>
+                </tr>
+                <tr>
+                  <td class="text-center">15</td>
+                  <td class="text-center">16</td>
+                  <td class="text-center">17</td>
+                  <td class="text-center">18</td>
+                  <td class="text-center">19</td>
+                  <td class="text-center">20</td>
+                  <td class="text-center">21</td>
+                </tr>
+                <tr>
+                  <td class="text-center">22</td>
+                  <td class="text-center">23</td>
+                  <td class="text-center">24</td>
+                  <td class="text-center">25</td>
+                  <td class="text-center">26</td>
+                  <td class="text-center">27</td>
+                  <td class="text-center">28</td>
+                </tr>
+                <tr>
+                  <td class="text-center">29</td>
+                  <td class="text-center">30</td>
+                  <td class="text-center">31</td>
+                  <td class="text-center" colspan="4"></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Sección de publicaciones -->
+    <div class="col-md-6">
+      <!-- Crear publicación -->
+      <app-crear-pub></app-crear-pub>
+
+      <!-- Detalles de publicaciones -->
+      <div class="mt-3">
+        <!-- Aquí va el contenido de publicaciones -->
+      </div>
+    </div>
+
+    <!-- Barra lateral derecha (Perfil) -->
     <div class="col-md-3">
       <div class="card shadow-sm border-0">
         <div class="card-body text-center">
@@ -24,111 +140,15 @@
       </div>
     </div>
     
-    
-    <!-- Sección de publicaciones -->
-    <div class="col-md-6">
-      <!-- Crear publicación -->
-      <app-crear-pub></app-crear-pub>
-
-      <!-- Detalles de publicaciones -->
-      <div class="mt-3">
-        
-      </div>
-    </div>
-
-    <!-- Barra lateral derecha -->
-    <div class="col-md-3">
-      <div class="card mb-4 shadow-sm border-0">
-        <div class="card-body">
-          <h5 class="card-title text-primary mb-3">Sugerencias</h5>
-          <!-- Lista de sugerencias -->
-          <ul class="list-unstyled">
-            <!-- Sugerencia de usuario -->
-            <li class="d-flex align-items-center justify-content-between mb-3">
-              <div class="d-flex align-items-center">
-                <img
-                  src="https://media.istockphoto.com/id/1464539429/es/foto/hombre-de-negocios-reflexivo-con-una-tableta-digital.jpg?s=612x612&w=0&k=20&c=ZuAqe0Uo1QCIkHPKEJkOS-ToRb-j3xt3QZSZvBNfrgg="
-                  class="rounded-circle border border-secondary me-2"
-                  width="40"
-                  height="40"
-                  alt="Martin"
-                />
-                <div>
-                  <h6 class="mb-0 fw-bold text-dark">Martin</h6>
-                  <small class="text-muted">Recomendado</small>
-                </div>
-              </div>
-              <button class="btn btn-sm btn-outline-primary px-3">Seguir</button>
-            </li>
-    
-            <li class="d-flex align-items-center justify-content-between mb-3">
-              <div class="d-flex align-items-center">
-                <img
-                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMH_d0W94Tjc2VvAkxRtHxVZraILS-j09qgQ&s"
-                  class="rounded-circle border border-secondary me-2"
-                  width="40"
-                  height="40"
-                  alt="Tatiana"
-                />
-                <div>
-                  <h6 class="mb-0 fw-bold text-dark">Tatiana</h6>
-                  <small class="text-muted">Amigos en común</small>
-                </div>
-              </div>
-              <button class="btn btn-sm btn-outline-primary px-3">Seguir</button>
-            </li>
-    
-            <li class="d-flex align-items-center justify-content-between mb-3">
-              <div class="d-flex align-items-center">
-                <img
-                  src="https://media.istockphoto.com/id/1437931505/es/foto/empresario-tableta-digital-o-planificaci%C3%B3n-estrat%C3%A9gica-en-el-vest%C3%ADbulo-de-conferencias-del.jpg?s=612x612&w=0&k=20&c=dlFosNuwKQey87KLctNZD-MWmSNW1WyT7QXGKM3XuaA="
-                  class="rounded-circle border border-secondary me-2"
-                  width="40"
-                  height="40"
-                  alt="Alex"
-                />
-                <div>
-                  <h6 class="mb-0 fw-bold text-dark">Alex</h6>
-                  <small class="text-muted">Recomendado</small>
-                </div>
-              </div>
-              <button class="btn btn-sm btn-outline-primary px-3">Seguir</button>
-            </li>
-    
-            <li class="d-flex align-items-center justify-content-between">
-              <div class="d-flex align-items-center">
-                <img
-                  src="https://media.istockphoto.com/id/1354898581/es/foto/foto-de-un-joven-empresario-usando-una-computadora-port%C3%A1til-en-una-oficina-moderna.jpg?s=612x612&w=0&k=20&c=ill7Gebgk_9_xh-pai6iODyhz1x644E_WhwzZgVbS6I="
-                  class="rounded-circle border border-secondary me-2"
-                  width="40"
-                  height="40"
-                  alt="Fernando"
-                />
-                <div>
-                  <h6 class="mb-0 fw-bold text-dark">Fernando</h6>
-                  <small class="text-muted">Amigos en común</small>
-                </div>
-              </div>
-              <button class="btn btn-sm btn-outline-primary px-3">Seguir</button>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    
-
-
-    
   </div>
-   <!-- Sección de actividad reciente -->
+
+  <!-- Sección de actividad reciente -->
   <hr class="my-4">
   <app-lista-pub></app-lista-pub>
   <hr class="my-4">
   <app-lista-actividad></app-lista-actividad>
   <hr class="my-4">
   <app-lista-emp></app-lista-emp>
-
-
 </div> <!-- Cierre del contenedor principal -->
 
 <!-- Pie de página fuera del contenedor principal -->
