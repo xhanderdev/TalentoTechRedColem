@@ -7,6 +7,7 @@ export interface Emprendimiento {
   nombre: string;
   descripcion: string;
   urlSitioWeb: string;
+  objetivo: string;
   emprendimiento: Emprendimiento
 }
 @Injectable({

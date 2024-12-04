@@ -5,24 +5,25 @@
   <div class="row">
     <!-- Barra lateral izquierda -->
     <div class="col-md-3">
-      <div class="card">
+      <div class="card shadow-sm border-0">
         <div class="card-body text-center">
-          <h5 class="card-title">Mi Perfil</h5>
+          <h5 class="card-title text-primary fw-bold mb-3">Mi Perfil</h5>
           <img
-            src="https://sharedp.com/wp-content/uploads/2024/09/fotos-de-perfil-para-whatsapp-para-hombres-1024x1024.jpg"
-            class="rounded-circle mb-3"
+            src="https://img.freepik.com/foto-gratis/hombre-negocios-experimentado-pie-sala-oficina-empleado-oficina-contenido-indio-anteojos-sonriendo-posando-manos-juntas-concepto-negocio-gestion-corporacion_74855-11681.jpg"
+            class="rounded-circle border border-secondary mb-3"
             alt="Profile"
-            width="100"
+            width="120"
+            height="120"
           />
-          <p class="mt-2 mb-0">Usuario Nombre</p>
-          <div class="d-grid gap-2">
-            <button class="btn btn-outline-primary">
-              <a href="http://localhost:4200/perfil" class="text-decoration-none text-dark">Editar Perfil</a>
-            </button>
-          </div>
+          <p class="mt-2 mb-1 fs-6 text-dark">Bienvenido, <strong class="text-primary">Alejandro</strong></p>
+          <small class="text-muted d-block mb-3">¡Explora tu perfil y personaliza tu experiencia!</small>
+          <button class="btn btn-primary w-100">
+            <a href="http://localhost:4200/perfil" class="text-decoration-none text-white">Editar Perfil</a>
+          </button>
         </div>
       </div>
     </div>
+    
     
     <!-- Sección de publicaciones -->
     <div class="col-md-6">
@@ -37,25 +38,87 @@
 
     <!-- Barra lateral derecha -->
     <div class="col-md-3">
-      <div class="card mb-4">
+      <div class="card mb-4 shadow-sm border-0">
         <div class="card-body">
-          <h5 class="card-title">Sugerencias</h5>
-          <!-- Sugerencia de usuarios -->
-          <div class="d-flex align-items-center mb-2">
-            <img
-              src="https://i.pinimg.com/474x/f9/ef/f5/f9eff5fd8e045349b31d4641253f628f.jpg"
-              class="rounded-circle me-2"
-              width="32"
-              height="32"
-            />
-            <div>
-              <h6 class="mb-0">Usuario Ejemplo</h6>
-              <button class="btn btn-sm btn-primary">Seguir</button>
-            </div>
-          </div>
+          <h5 class="card-title text-primary mb-3">Sugerencias</h5>
+          <!-- Lista de sugerencias -->
+          <ul class="list-unstyled">
+            <!-- Sugerencia de usuario -->
+            <li class="d-flex align-items-center justify-content-between mb-3">
+              <div class="d-flex align-items-center">
+                <img
+                  src="https://media.istockphoto.com/id/1464539429/es/foto/hombre-de-negocios-reflexivo-con-una-tableta-digital.jpg?s=612x612&w=0&k=20&c=ZuAqe0Uo1QCIkHPKEJkOS-ToRb-j3xt3QZSZvBNfrgg="
+                  class="rounded-circle border border-secondary me-2"
+                  width="40"
+                  height="40"
+                  alt="Martin"
+                />
+                <div>
+                  <h6 class="mb-0 fw-bold text-dark">Martin</h6>
+                  <small class="text-muted">Recomendado</small>
+                </div>
+              </div>
+              <button class="btn btn-sm btn-outline-primary px-3">Seguir</button>
+            </li>
+    
+            <li class="d-flex align-items-center justify-content-between mb-3">
+              <div class="d-flex align-items-center">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMH_d0W94Tjc2VvAkxRtHxVZraILS-j09qgQ&s"
+                  class="rounded-circle border border-secondary me-2"
+                  width="40"
+                  height="40"
+                  alt="Tatiana"
+                />
+                <div>
+                  <h6 class="mb-0 fw-bold text-dark">Tatiana</h6>
+                  <small class="text-muted">Amigos en común</small>
+                </div>
+              </div>
+              <button class="btn btn-sm btn-outline-primary px-3">Seguir</button>
+            </li>
+    
+            <li class="d-flex align-items-center justify-content-between mb-3">
+              <div class="d-flex align-items-center">
+                <img
+                  src="https://media.istockphoto.com/id/1437931505/es/foto/empresario-tableta-digital-o-planificaci%C3%B3n-estrat%C3%A9gica-en-el-vest%C3%ADbulo-de-conferencias-del.jpg?s=612x612&w=0&k=20&c=dlFosNuwKQey87KLctNZD-MWmSNW1WyT7QXGKM3XuaA="
+                  class="rounded-circle border border-secondary me-2"
+                  width="40"
+                  height="40"
+                  alt="Alex"
+                />
+                <div>
+                  <h6 class="mb-0 fw-bold text-dark">Alex</h6>
+                  <small class="text-muted">Recomendado</small>
+                </div>
+              </div>
+              <button class="btn btn-sm btn-outline-primary px-3">Seguir</button>
+            </li>
+    
+            <li class="d-flex align-items-center justify-content-between">
+              <div class="d-flex align-items-center">
+                <img
+                  src="https://media.istockphoto.com/id/1354898581/es/foto/foto-de-un-joven-empresario-usando-una-computadora-port%C3%A1til-en-una-oficina-moderna.jpg?s=612x612&w=0&k=20&c=ill7Gebgk_9_xh-pai6iODyhz1x644E_WhwzZgVbS6I="
+                  class="rounded-circle border border-secondary me-2"
+                  width="40"
+                  height="40"
+                  alt="Fernando"
+                />
+                <div>
+                  <h6 class="mb-0 fw-bold text-dark">Fernando</h6>
+                  <small class="text-muted">Amigos en común</small>
+                </div>
+              </div>
+              <button class="btn btn-sm btn-outline-primary px-3">Seguir</button>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
+    
+
+
+    
   </div>
    <!-- Sección de actividad reciente -->
   <hr class="my-4">

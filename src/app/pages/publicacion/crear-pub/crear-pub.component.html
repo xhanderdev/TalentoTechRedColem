@@ -1,26 +1,44 @@
-
-        <!-- Crear publicación -->
-        <div class="container card mb-5">
-          <div class="card-body">
-            <div class="mb-3">
-              <label for="titulo" class="form-label">Título</label>
-              <input type="text" class="form-control" id="titulo" placeholder="Introduce el título">
-            </div>
-            <div class="mb-3">
-              <label for="contenido" class="form-label">Contenido</label>
-              <textarea class="form-control" id="contenido" rows="5" placeholder="Escribe tu publicación..."></textarea>
-            </div>
-            <div class="d-flex justify-content-between">
-              <div>
-                <button class="btn btn-outline-secondary me-2">
-                  <i class="bi bi-image"></i> Foto
-                </button>
-                <button class="btn btn-outline-secondary">
-                  <i class="bi bi-camera-video"></i> Video
-                </button>
-              </div>
-              <button type="submit" class="btn btn-primary">Publicar</button>
-            </div>
-          </div>
+<!-- Crear publicación -->
+<div class="container card shadow-sm mb-5 border-0">
+  <div class="card-body">
+    <h5 class="card-title text-primary fw-bold mb-4">Crear Publicación</h5>
+    <form>
+      <!-- Título de la publicación -->
+      <div class="mb-3">
+        <input 
+          type="text" 
+          class="form-control rounded-pill px-3" 
+          id="titulo" 
+          placeholder="¿Qué tienes en mente, Alejandro?" 
+          aria-label="Título de la publicación"
+        />
+      </div>
+      <!-- Contenido de la publicación -->
+      <div class="mb-3">
+        <textarea 
+          class="form-control rounded-3" 
+          id="contenido" 
+          rows="4" 
+          placeholder="Escribe algo interesante..." 
+          aria-label="Contenido de la publicación"
+        ></textarea>
+      </div>
+      <!-- Opciones y botón de publicar -->
+      <div class="d-flex justify-content-between align-items-center">
+        <!-- Botones de opciones -->
+        <div>
+          <button class="btn btn-outline-secondary rounded-pill me-2">
+            <i class="bi bi-image"></i> Foto
+          </button>
+          <button class="btn btn-outline-secondary rounded-pill">
+            <i class="bi bi-camera-video"></i> Video
+          </button>
         </div>
-
+        <!-- Botón de publicar -->
+        <button type="submit" class="btn btn-primary rounded-pill px-4">
+          Publicar
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
