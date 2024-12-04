@@ -94,97 +94,11 @@
                     </div>
                   </div>
 
-                  <!--Validar direccion-->
-                  <div class="form-group">
-                    <label for="direccion">Dirección</label>
-                    <input
-                    type="text"
-                    id="direccion"
-                    class="form-control"
-                    required
-                    name="direccion"
-                    [(ngModel)]="usuario.direccion"
-                    #direccion="ngModel">
-                    <div *ngIf="direccion.invalid && (direccion.dirty || direccion.touched)" class="text-danger">
-                      <small *ngIf="direccion.errors?.['required']">La dirección es obligatoria</small>
-                    </div>
-                  </div>
-
-                  <!--Foto Perfil-->
-                  <div>
-                    <label for="fotoPerfil">Foto de Perfil</label>
-                    <input 
-                    type="text"
-                    id="fotoPerfil"
-                    class="form-control"
-                    name="fotoPerfil"
-                    [(ngModel)]="usuario.fotoPerfil"
-                    #fotoPerfil="ngModel">
-                  </div>
-
-                  <!--Validar  biografia -->
-                  <div class="form-group">
-                    <label for="biografia">Biografía</label>
-                    <textarea
-                    id="biografia"
-                    class="form-control"
-                    minlength="10"
-                    maxlength="200"
-                    name="biografia"
-                    [(ngModel)]="usuario.biografia"
-                    #biografia="ngModel"></textarea>
-                    <div *ngIf="biografia.invalid && (biografia.dirty || biografia.touched)" class="text-danger">
-                      <small *ngIf="biografia.errors?.['minlength']">La biografía debe tener al menos 10 caracteres</small>
-                      <small *ngIf="biografia.errors?.['maxlength']">La biografía debe tener menos de 200 caracteres</small>
-                    </div>
-                  </div>
-                  
-                  <!--Validar sitio web -->
-                  <div class="form-group">
-                    <label for="sitioWeb">Sitio Web</label>
-                    <input
-                    type="url"
-                    id="sitioWeb"
-                    class="form-control"
-                    name="sitioWeb"
-                    [(ngModel)]="usuario.sitioWeb"
-                    #sitioWeb="ngModel">
-                    <div *ngIf="sitioWeb.invalid && (sitioWeb.dirty || sitioWeb.touched)" class="text-danger">
-                      <small *ngIf="sitioWeb.errors?.['url']">El formato de la URL no es válido</small>
-                    </div>
-                  </div>
-                  <!--Validar Activo -->
-                  <div>
-                    <label>
-                      <input type="checkbox"
-                             name="activo"
-                             [(ngModel)]="usuario.activo">
-                      Activo
-                    </label>
-                  </div>
-
-                  <!--Validar ciudad -->
-                  <div class="form-group">
-                    <label for="ciudad">Ciudad</label>
-                    <input type="text"
-                    id="ciudad"
-                    class="form-control"
-                    required
-                    name="ciudad"
-                    [(ngModel)]="usuario.ciudad"
-                    #ciudad="ngModel">
-                    <div *ngIf="ciudad.invalid && (ciudad.dirty || ciudad.touched)" class="text-danger">
-                      <small *ngIf="ciudad.errors?.['required']">La ciudad es obligatoria</small>
-                    </div>
-                  </div>
-
                  <button
                  class="btn btn-success"
                  type="submit"
                  [disabled]="usuarioForm.invalid"
                  >Registrar Usuario</button>
-                
-                 
 
             </form>
 
