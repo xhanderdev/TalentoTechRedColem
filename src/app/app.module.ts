@@ -59,7 +59,7 @@ import { CalendarComponent } from './shared/calendar/calendar.component';
     FloatingChatComponent,
     CalendarComponent
 
-    
+
 
   ],
   imports: [
@@ -68,8 +68,8 @@ import { CalendarComponent } from './shared/calendar/calendar.component';
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
-    
-    
+
+
 ],
   providers: [],
   bootstrap: [AppComponent]

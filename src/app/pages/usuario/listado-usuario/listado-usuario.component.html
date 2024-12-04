@@ -1,58 +1,81 @@
 <app-header></app-header>
 
 <div class="main-container">
-  <div class="content user-list">
-    <h1 class="page-title">Lista Usuarios Creados</h1>
-    <div class="table-container small-table">
+  <hr class="my-4">
+
+  <div class="content full-list">
+    <h1 class="page-title">Lista Completa (Editar y Eliminar)</h1>
+    <div class="table-container">
       <table class="user-table">
         <thead>
           <tr>
             <th scope="col">Número</th>
             <th scope="col">E-Mail</th>
             <th scope="col">Contraseña</th>
+            <th scope="col">Editar</th>
+            <th scope="col">Borrar</th>
           </tr>
         </thead>
         <tbody>
-          <tr *ngFor="let Usu of usuario">
-            <td>{{ Usu.idUsuario }}</td>
-            <td>{{ Usu.correoElectronico }}</td>
-            <td>{{ Usu.password }}</td>
+          <tr *ngFor="let usu of usuario">
+            <td>{{ usu.idUsuario }}</td>
+            <td>{{ usu.correoElectronico }}</td>
+            <td>{{ usu.password }}</td>
+            <td>
+              <button class="btn btn-button" (click)="openModal(usu)">Editar</button>
+            </td>
+            <td>
+              <button class="btn btn-danger" (click)="deleteUsuario(usu.idUsuario)">Eliminar</button>
+            </td>
           </tr>
         </tbody>
       </table>
     </div>
     <button class="btn back-button" routerLink="/registro">Regresar a Registro</button>
   </div>
+</div>
 
-  <hr class="my-4">
-
-  <div class="content full-list">
-    <h1 class="page-title">Lista Completa</h1>
-    <div class="table-container">
-      <table class="user-table">
-        <thead>
-          <tr>
-            <th scope="col">Número</th>
-            <th scope="col">Nombre</th>
-            <th scope="col">Apellido</th>
-            <th scope="col">E-Mail</th>
-            <th scope="col">Teléfono</th>
-            <th scope="col">Sitio Web</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr *ngFor="let Usu of usuario">
-            <td>{{ Usu.idUsuario }}</td>
-            <td>{{ Usu.nombre }}</td>
-            <td>{{ Usu.apellido }}</td>
-            <td>{{ Usu.correoElectronico }}</td>
-            <td>{{ Usu.telefono }}</td>
-            <td>{{ Usu.sitioWeb }}</td>
-          </tr>
-        </tbody>
-      </table>
+<!-- Modal -->
+<div class="modal" [ngClass]="{'is-active': isModalOpen}">
+  <div class="modal-background" (click)="closeModal()"></div>
+  <div class="modal-content">
+    <div class="box">
+      <h2 class="modal-title">Editar Usuario</h2>
+      <form (ngSubmit)="updateUsuario()">
+        <div class="field">
+          <label class="label">Correo Electrónico</label>
+          <div class="control">
+            <input
+              class="input"
+              type="email"
+              [(ngModel)]="selectedUsuario.correoElectronico"
+              name="correo"
+              required
+            />
+          </div>
+        </div>
+        <div class="field">
+          <label class="label">Contraseña</label>
+          <div class="control">
+            <input
+              class="input"
+              type="text"
+              [(ngModel)]="selectedUsuario.password"
+              name="password"
+              required
+            />
+          </div>
+        </div>
+        <div class="field is-grouped">
+          <div class="control">
+            <button class="button is-link" type="submit">Guardar cambios</button>
+          </div>
+          <div class="control">
+            <button class="button is-light" type="button" (click)="closeModal()">Cancelar</button>
+          </div>
+        </div>
+      </form>
     </div>
-    <button class="btn back-button" routerLink="/registro">Regresar</button>
   </div>
 </div>
 

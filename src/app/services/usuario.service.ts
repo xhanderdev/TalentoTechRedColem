@@ -33,27 +33,20 @@ export class UsuarioService {
       return this.http.get<Usuario[]>(this.apiUrl)
    }
     //Crear usuario
-    createUsuario(usuario: Usuario):Observable<Usuario>{
+    createUsuario(usuario: Omit<Usuario, 'idUsuario'>):Observable<Usuario>{
       return this.http.post<Usuario>(this.apiUrl, usuario)
    }
 
-     // Modificar usuario pendiente para uso
-    updateUsuario(id: number, usuario: Usuario): Observable<Usuario> {
-      const url = `${this.apiUrl}/${id}`;
-      return this.http.put<Usuario>(url, usuario);
+   updateUsuario(usuario: Omit<Usuario, 'idUsuario'> & { idUsuario: number }): Observable<Usuario> {
+    // PUT para actualizar el usuario por id
+    return this.http.put<Usuario>(`${this.apiUrl}/${usuario.idUsuario}`, usuario);
   }
 
   // Eliminar usuario pendiente 
-    deleteUsuario(id: number): Observable<void> {
-      const url = `${this.apiUrl}/${id}`;
-      return this.http.delete<void>(url);
-  }
+    deleteUsuario(idUsuario: number):Observable<void> {
+      return this.http.delete<void>(`${this.apiUrl}/${idUsuario}`);
+   }
 
-  // Consultar usuario por ID pendiente 
-    getUsuarioById(id: number): Observable<Usuario> {
-      const url = `${this.apiUrl}/${id}`;
-      return this.http.get<Usuario>(url);
-  }
 
 }
 
