@@ -29,8 +29,10 @@ export class RegistroComponent {
 
   constructor(private usurioservicio: UsuarioService){}
 
+  
+
   onSubmit():void{
-    this.usurioservicio.createUsuario(this.usuario).subscribe({
+    this.usurioservicio.createUsuario(this.usuario as Usuario).subscribe({
       next:(result) => {
         console.log("Usuario: ", this.usuario)
         console.log("Result: ", result)

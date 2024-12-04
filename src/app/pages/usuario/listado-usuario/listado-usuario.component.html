@@ -1,4 +1,4 @@
-<p>Prueba listado Usuario</p>
+<app-header></app-header>
 
 
 <div class="container">
@@ -10,6 +10,7 @@
                 <thead>
                   <tr>
                    <!-- <th scope="col">Id Usuario</th>-->
+                    <th scope="col">Numero</th> 
                     <th scope="col">Nombre</th>
                     <th scope="col">Apellido</th>
                     <th scope="col">E-Mail</th>
@@ -20,7 +21,7 @@
                 </thead>
                 <tbody>
                   <tr *ngFor="let Usu of usuario">
-                    <th scope="row">{{Usu.nombre}}</th>
+                    <th scope="row">{{Usu.idUsuario}}</th>
                     <td>{{Usu.nombre}}</td>
                     <td>{{Usu.apellido}}</td>
                     <td>{{Usu.correoElectronico}}</td>
@@ -32,7 +33,7 @@
               </table>
             <!--Crear usuario-->
 
-              <button class="btn btn-primary " routerLink="/registro">Crear usuario</button>
+              <button class="btn btn-primary " routerLink="/registro">regresar</button>
 
         </div>
     </div>

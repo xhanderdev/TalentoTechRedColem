@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';//importa observable
 import { PerfilComponent } from './../pages/usuario/perfil/perfil.component';
 
 export interface Usuario{
-  
+  idUsuario: number;
   nombre: string;
   apellido: string;
   correoElectronico: string;

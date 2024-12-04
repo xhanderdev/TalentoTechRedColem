@@ -6,6 +6,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { RegistroComponent } from './pages/usuario/registro/registro.component';
 import { ListaPubComponent } from './pages/publicacion/lista-pub/lista-pub.component';
 import { DestallePubComponent } from './pages/publicacion/destalle-pub/destalle-pub.component';
+import { ListadoUsuarioComponent } from './pages/usuario/listado-usuario/listado-usuario.component';
 
 
 
@@ -15,7 +16,8 @@ const routes: Routes = [
   {path: "home", component : HomeComponent},
   {path: "registro", component : RegistroComponent},
   {path: "publicaciones", component : ListaPubComponent},
-  {path: "listaPublicaciones", component : DestallePubComponent}
+  {path: "listaPublicaciones", component : DestallePubComponent},
+  {path: "listaUsuarios", component: ListadoUsuarioComponent}
 ];
 
 @NgModule({
