@@ -74,15 +74,30 @@
 .btn-primary {
   background-color: #54668E;
   border: none;
+  color: #FFFFFF; /* Texto blanco */
+  padding: 10px; /* Asegura buena apariencia */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .btn-primary:hover {
   background-color: #363955;
+  color: #FFFFFF; /* Asegura que el texto siga siendo blanco */
 }
 
+/* Enlace dentro del botón */
 .btn-link {
-  color: #F5F6E6;
+  color: #FFFFFF; /* Texto blanco */
   text-decoration: none;
+  width: 100%; /* Asegura que el enlace ocupe todo el botón */
+  display: block; /* Permite centrarlo */
+  text-align: center;
+}
+
+.btn-link:hover {
+  color: #FFFFFF; /* Asegura que no cambie en hover */
 }
 
 .social-btn {
@@ -111,4 +126,3 @@
   color: #363955;
   font-weight: bold;
 }
-

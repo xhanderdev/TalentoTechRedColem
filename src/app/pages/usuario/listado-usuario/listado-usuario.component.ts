@@ -65,7 +65,7 @@ export class ListadoUsuarioComponent {
 
 
   deleteUsuario(id: number): void {
-    if (confirm('¿Estás seguro de que deseas eliminar este dueño?')) {
+    if (confirm('¿Estás seguro de que deseas eliminar este usuario?')) {
       this.usuarioservicio.deleteUsuario(id).subscribe(
         () => {
           // Filtra correctamente usando el ID del usuario
@@ -74,8 +74,8 @@ export class ListadoUsuarioComponent {
           this.router.navigate(['/listaUsuarios']);  // Redirige después de la eliminación
         },
         (error) => {
-          console.error('Error al eliminar el dueño:', error);
-          alert('Hubo un error al eliminar el dueño');
+          console.error('Error al eliminar el usuario:', error);
+          alert('Hubo un error al eliminar el usuario');
           this.router.navigate(['/listaUsuarios']);
         }
       );
