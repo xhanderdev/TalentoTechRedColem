@@ -1,9 +1,33 @@
 <app-header></app-header>
 
-<div >
-  <div class="content">
-    <h1 class="page-title">Listado de Usuarios RedColem</h1>
+<div class="main-container">
+  <div class="content user-list">
+    <h1 class="page-title">Lista Usuarios Creados</h1>
+    <div class="table-container small-table">
+      <table class="user-table">
+        <thead>
+          <tr>
+            <th scope="col">Número</th>
+            <th scope="col">E-Mail</th>
+            <th scope="col">Contraseña</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let Usu of usuario">
+            <td>{{ Usu.idUsuario }}</td>
+            <td>{{ Usu.correoElectronico }}</td>
+            <td>{{ Usu.password }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <button class="btn back-button" routerLink="/registro">Regresar a Registro</button>
+  </div>
 
+  <hr class="my-4">
+
+  <div class="content full-list">
+    <h1 class="page-title">Lista Completa</h1>
     <div class="table-container">
       <table class="user-table">
         <thead>
@@ -28,7 +52,6 @@
         </tbody>
       </table>
     </div>
-
     <button class="btn back-button" routerLink="/registro">Regresar</button>
   </div>
 </div>

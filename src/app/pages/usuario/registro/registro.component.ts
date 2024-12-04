@@ -32,9 +32,7 @@ export class RegistroComponent {
 
   constructor(private usurioservicio: UsuarioService){}
 
-  
-
-  onSubmit():void{
+   onSubmit():void{
 
     // Validar que las contraseñas coincidan antes de enviar
     if (this.usuario.password !== this.confirmPassword) {
