@@ -1,0 +1,115 @@
+/* General Styles */
+.login {
+    background-color: #E8E8E8;
+    color: #363955;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Navbar */
+  .navbar {
+    background-color: #363955;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .navbar-brand {
+    font-weight: bold;
+    color: #F5F6E6 !important;
+  }
+  
+  .navbar-logo {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+  }
+  
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23F5F6E6' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(245, 246, 230, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  }
+  
+  .nav-link {
+    color: #E8E8E8;
+    font-weight: 500;
+  }
+  
+  .nav-link:hover {
+    color: #F5F6E6;
+  }
+  
+  /* Login Card */
+  .login-card {
+    max-width: 400px;
+    background-color: #F5F6E6;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    margin: 50px auto;
+  }
+  
+  .input-group {
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .input-group-text {
+    background-color: #FFFFFF;
+    border: 1px solid #E0E0E0;
+    border-right: none;
+  }
+  
+  .input-group .form-control {
+    border: 1px solid #E0E0E0;
+    border-left: none;
+    border-radius: 0 8px 8px 0;
+  }
+  
+  .input-icon {
+    width: 20px;
+  }
+  
+  .form-check-label {
+    color: #54668E;
+  }
+  
+  /* Buttons */
+  .btn-primary {
+    background-color: #54668E;
+    border: none;
+  }
+  
+  .btn-primary:hover {
+    background-color: #363955;
+  }
+  
+  .btn-link {
+    color: #F5F6E6;
+    text-decoration: none;
+  }
+  
+  .social-btn {
+    border: 1px solid #E0E0E0;
+    border-radius: 8px;
+    padding: 10px 20px;
+    background-color: #FFFFFF;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .social-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+  
+  .text-center a {
+    color: #54668E;
+    text-decoration: none;
+  }
+  
+  .text-center a:hover {
+    color: #363955;
+    font-weight: bold;
+  }
+  
+  

@@ -27,11 +27,22 @@ export class RegistroComponent {
     ciudad: ''
   };
 
+    // Propiedad para la confirmación de contraseña
+    confirmPassword: string = '';
+
   constructor(private usurioservicio: UsuarioService){}
 
   
 
   onSubmit():void{
+
+    // Validar que las contraseñas coincidan antes de enviar
+    if (this.usuario.password !== this.confirmPassword) {
+      alert('Las contraseñas no coinciden. Por favor, verifica.');
+      return;
+    }
+
+
     this.usurioservicio.createUsuario(this.usuario as Usuario).subscribe({
       next:(result) => {
         console.log("Usuario: ", this.usuario)
